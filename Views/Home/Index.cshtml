@@ -1,0 +1,204 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* Nav bar starts *@
+
+<section class="Navb">
+    <nav class="navbar navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="~/images/home/logo.png" /></a>
+            <div>
+                <a asp-action="Registration" asp-controller="Account" class="btn btn-outline-light" type="submit">sign Up</a>
+
+                <a asp-action="Login" asp-controller="Account" class="btn btn-outline-light" type="submit">Log in</a>
+            </div>
+        </div>
+    </nav>
+    
+</section>
+
+@* Nav bar starts *@
+
+
+@* banner starts *@
+<section id="bgimage">
+    <div>
+        <h2>We Will Save Lifes</h2>
+        <h1>Emergency helo any time any where</h1>
+        <p>Call our emergency service at your doorstep</p>
+        <button type="button" class="btn btn-outline-info">Emergency Help</button>
+    </div>
+
+</section>
+@* banner Ends *@
+
+@* Feature area starts *@
+<section  class="section-p1">
+    <div><h1>Our Features</h1></div>
+    <div id="feature">
+        <div id="feature1">
+            <div class="feature-box">
+                <img src="~/images/home/dc-consult.jpg" />
+                <h6>Online Doctor</h6>
+            </div>
+            <div class="feature-box">
+                <img src="~/images/home/emergency-services.png" />
+                <h6>Emergency Helo</h6>
+            </div>
+
+            <div class="feature-box">
+                <img src="~/images/home/blood.jpg" />
+                <h6>Medical Test</h6>
+            </div>
+        </div>
+
+        <div id="feature1">
+            <div class="feature-box">
+                <img src="~/images/home/medicalshope.jpg" />
+                <h6>Medical Shop</h6>
+            </div>
+            <div class="feature-box">
+                <img src="~/images/home/blood-donation.png" />
+                <h6>Blood bank</h6>
+            </div>
+            <div class="feature-box">
+                <img src="~/images/home/chatbot.jpg" />
+                <h6>Ai chatbot</h6>
+            </div>
+
+        </div>
+    </div>
+</section>
+@* Feature area ends *@
+
+
+@*info section starts*@
+<div class="heading-info">
+    <h3>Get Medical help</h3>
+    <h4>Just in few Taps!</h4>
+</div>
+<section id="ourinfo">
+
+    <div class="infobox">
+        <img src="~/images/home/easy-installation.png" />
+        <h4>Easy to use</h4>
+        <p>Discover the simplicity of our medical service CareOnSpot. Easily schedule appointments, access records, and communicate securely with your healthcare team. Enjoy intuitive navigation, secure messaging, and personalized features for a hassle-free health experience. Your well-being, made easy.</p>
+    </div>
+    <div class="infobox">
+        <img src="~/images/home/save-time.png" />
+        <h4>Easy to use</h4>
+        <p>Experience 24/7 appointment scheduling, instant access to health records, and secure communication with your healthcare provider. Whether it's day or night, our user-friendly platform ensures you're in control of your health journey. Empower yourself with convenience and care, whenever you need it.</p>
+    </div>
+    <div class="infobox">
+        <img src="~/images/home/shield.png" />
+        <h4>Easy to use</h4>
+        <p>At the heart of our medical services is an unwavering commitment to trust. We prioritize your health journey by providing a secure and reliable platform. Our team of trusted healthcare professionals is dedicated to delivering personalized care tailored to your unique needs. With a focus on transparency and integrity, we ensure that your medical information is handled with the utmost confidentiality.</p>
+    </div>
+
+    <div class="round-img">
+        <img src="~/images/home/round doctor photo.jpg" />
+    </div>
+
+</section>
+
+@*info section ends*@
+
+        @*service info starts*@
+<div class="heading-info">
+    <h3>Why Use CareOnSpot?</h3>
+
+</div>
+
+<section class="services-container">
+    <div class="service-card">
+        <img src="~/images/home/certification.png" />
+        <h3>Verified Doctors</h3>
+        <p>Your health is in trusted hands with our verified doctors. We prioritize your safety by ensuring our healthcare professionals are certified and qualified.</p>
+    </div>
+    <div class="service-card">
+        <img src="~/images/home/emergency.png" />
+        <h3>Doctors During Emergency</h3>
+        <p>Reliable doctors, ready for emergencies. Our responsive healthcare team is here 24/7, ensuring immediate expert care when you need it urgently. Your well-being is our priority, always.</p>
+    </div>
+    <div class="service-card">
+        <img src="~/images/home/blood-donation (1).png" />
+        <h3>Blood donation network</h3>
+        <p>Get expert advice anytime, ensuring prompt and reliable guidance for your health needs.</p>
+    </div>
+    <div class="service-card">
+        <img src="~/images/home/chatbot.png" />
+        <h3>AI Chatbot for Instant Help</h3>
+        <p>Unlock instant solutions with our AI chatbot, your friendly guide to quick answers and charming assistance anytime you need it.</p>
+    </div>
+
+</section>
+
+        @*service info Ends*@
+
+
+        @*small banner*@
+<section id="sm-banner" class="section-p1">
+    <div class="banner-box">
+        <h2>Medical Test At Home</h2>
+        <span>Make a reservation and we will collect your test sample from your home</span>
+        <button class="white">Learn more</button>
+    </div>
+
+    <div class="banner-box1">
+        <h2>Buy Medicine in One Tap</h2>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        <button class="white">Buy Now</button>
+    </div>
+</section>
+        @*small banner*@
+
+@* Footer starts *@
+<section id="ftr">
+    <footer class="bg-info">
+
+        <div>
+            <img src="~/images/home/logo-big-removebg-preview.png" />
+        </div>
+        <div class="col">
+            
+            <h4>Contact</h4>
+            <p>
+                <strong>Address:</strong>Level: 3, Road: 14, Block: C 180/6,
+                Mohammadpur,Dhaka-1219
+            </p>
+            <p><strong>Phone:</strong>+8801881954554</p>
+            <p><strong>Hours:</strong>10:00 - 06:00, Mon - sat </p>
+@*             <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-square" style="color: #1f65d6;"></i>
+                    <i class="fab fa-instagram" style="color: #b91818;"></i>
+                    <i class="fab fa-twitter" style="color: #74C0FC;"></i>
+                    <i class="fab fa-youtube" style="color: #e11919;"></i>
+
+                </div>
+            </div> *@
+        </div>
+
+        <div class="col1">
+            <h4>About</h4>
+            <a href="">About Us</a>
+            <a href=""> delivary information</a>
+            <a href="">Privacy policy</a>
+            <a href="">terms & conditions</a>
+            <a href="">Contact Us</a>
+        </div>
+
+        <div class="col1">
+            <h4>my account</h4>
+            <a href="">Sign In</a>
+            <a href="">View cart</a>
+            <a href="">My wishlist</a>
+            <a href="">Track my order</a>
+            <a href="">help </a>
+        </div>
+    </footer>
+
+</section>
+@* Footer starts *@

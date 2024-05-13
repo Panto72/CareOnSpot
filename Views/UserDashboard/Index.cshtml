@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+@* Banner section *@
+<section class="banner p-5">
+    <h1 class="text-center text-success  font-size">
+        Consult doctor at Home
+    </h1>
+    <p class="text-center fs-4">Starts from <span class="text-success text-center fs-2">100 taka</span> only</p>
+</section>
+
+
+<section class="p-5">
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img class="h-75 w-75 card-img-top mx-auto" src="~/images/home/emergency-services.png" />
+                <div class="card-body mx-auto">
+                    <a asp-action="Create" asp-controller="MedicalTest" class="btn btn-info text-center" role="button">Emergency Help</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./Images/Home/dc-consult.jpg" class="card-img-top h-75 w-75 mx-auto" alt="...">
+                <div class="card-body mx-auto">
+                    <a asp-action="OnlineConsultation" asp-controller="UserDashboard" class="btn btn-info text-center" role="button">Online doctor</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./Images/Home/Medicalshope.jpg" class="card-img-top h-75 w-75 mx-auto" alt="...">
+                <div class="card-body mx-auto">
+                    <a href="#" class="btn btn-info text-center" role="button">Order Medicine</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./Images/Userdashboard/blood-analysis.png" class="card-img-top h-75 w-75 mx-auto" alt="...">
+                <div class="card-body mx-auto">
+                    <a href="#" class="btn btn-info text-center" role="button">Medical Test</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./Images/Userdashboard/donor.png" class="card-img-top h-75 w-75 mx-auto" alt="...">
+                <div class="card-body mx-auto">
+                    <a href="#" class="btn btn-info text-center" role="button">Blood Bank</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./Images/Home/chatbot.jpg" class="card-img-top h-75 w-75 mx-auto" alt="...">
+                <div class="card-body mx-auto">
+                    <a href="https://mediafiles.botpress.cloud/ee252b9d-4306-4650-bd66-41bc55b030e7/webchat/bot.html" class="btn btn-info text-center" role="button">AI ChatBot</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,48 @@
+﻿@model CareOnSpot.Models.DoctorAppointment
+
+@{
+    ViewData["Title"] = "CreateApoinment";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h4>DoctorAppointment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateApoinment" asp-controller="UserDashboard" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Id" type="hidden" value="0" class="form-control" />
+            <input asp-for="ConferenceLink" type="hidden" class="form-control" />
+            <input asp-for="Status" type="hidden" value="Pandinng" class="form-control" />
+            <div class="form-group">
+                <label asp-for="SpecialitieId" class="control-label"></label>
+                <select asp-for="SpecialitieId" class="form-control" asp-items="@(ViewBag.SpecialitieId)"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoctorId" class="control-label"></label>
+                <select asp-for="DoctorId" class ="form-control" asp-items="@(ViewBag.DoctorId)"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreferredDate" class="control-label"></label>
+                <input asp-for="PreferredDate" class="form-control" />
+                <span asp-validation-for="PreferredDate" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
