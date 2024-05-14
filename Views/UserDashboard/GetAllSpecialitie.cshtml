@@ -1,0 +1,26 @@
+﻿@model IEnumerable<CareOnSpot.Models.Specialitie>
+
+@{
+    ViewData["Title"] = "GetAllSpecialitie";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<main class="container py-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <div class="card-body d-flex">
+                        <div>
+                            <h5 class="card-title">@item.Title</h5>
+                            <p class="card-text">@item.Description</p>
+                            <a asp-action="GetDoctorsBySpecialitie" asp-controller="UserDashboard" asp-route-id="@item.Id" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        }
+
+    </div>
+</main>

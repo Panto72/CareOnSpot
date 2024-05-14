@@ -35,6 +35,8 @@ builder.Services.AddScoped<ISpecialitieService, SpecialitieService>();
 builder.Services.AddScoped<IDoctorAppointmentService, DoctorAppointmentService>();
 builder.Services.AddScoped<IMedicalTestService, MedicalTestService>();
 builder.Services.AddScoped<IAmbulanceService, AmbulanceService>();
+builder.Services.AddScoped<IEmergncyHelpService, EmergencyHelpService>();
+builder.Services.AddScoped<ILocationService, LocationService>();
 
 
 var app = builder.Build();

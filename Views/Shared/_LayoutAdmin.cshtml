@@ -195,6 +195,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a asp-action="Index" asp-controller="User" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "User" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>User</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a asp-action="Index" asp-controller="Hospital" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "Hospital" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>Hospital</p>
@@ -251,6 +257,12 @@
                             <a asp-action="Index" asp-controller="Specialitie" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "Specialitie" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>Specialitie</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-action="Index" asp-controller="EmergencyHelp" class="nav-link @(ViewContext.RouteData.Values["Controller"].ToString() == "EmergencyHelp" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Emergency Help</p>
                             </a>
                         </li>
                     </ul>

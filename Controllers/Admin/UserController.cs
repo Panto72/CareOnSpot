@@ -2,7 +2,7 @@
 using CareOnSpot.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CareOnSpot.Controllers
+namespace CareOnSpot.Controllers.Admin
 {
     public class UserController : Controller
     {

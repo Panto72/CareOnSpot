@@ -48,6 +48,7 @@ namespace CareOnSpot.Controllers
                         return user.UserType switch
                         {
                             "Admin" => RedirectToAction("Index", "Dashboard"),
+                            "Doctor" => RedirectToAction("Index", "Dashboard"),
                             _ => RedirectToAction("Index", "UserDashboard"),
                         };
                     }

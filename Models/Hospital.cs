@@ -27,4 +27,5 @@ public class Hospital : BaseEntity
     public ICollection<MedicalTest> MedicalTests { get; set; } = new HashSet<MedicalTest>();
     public ICollection<Ambulance> Ambulances { get; set; } = new HashSet<Ambulance>(); 
     #endregion
+    public ICollection<EmergencyHelp> EmergencyHelps { get; set; } = new HashSet<EmergencyHelp>();
 }

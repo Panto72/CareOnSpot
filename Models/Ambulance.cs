@@ -15,5 +15,7 @@ namespace CareOnSpot.Models
         public string? ContacNumber { get; set; }
         [Display(Name = "Need Medical Support")]
         public bool IsMedicalSupport { get; set; }
+
+        public ICollection<EmergencyHelp> EmergencyHelps { get; set; } = new HashSet<EmergencyHelp>();
     }
 }

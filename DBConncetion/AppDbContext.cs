@@ -21,7 +21,8 @@ public class AppDbContext : DbContext
     public DbSet<DoctorAppointment> DoctorAppointment { get; set; }
     public DbSet<MedicalTest> MedicalTest { get; set; }
     public DbSet<Ambulance> ambulances { get; set; }
-
+    public DbSet<EmergencyHelp> EmergencyHelps { get; set; }
+    public DbSet<Location> Location { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -1597,8 +1597,8 @@ D:\homepage\CareOnSpot\obj\Debug\net8.0\CareOnSpot.pdb
 D:\homepage\CareOnSpot\obj\Debug\net8.0\CareOnSpot.genruntimeconfig.cache
 D:\homepage\CareOnSpot\obj\Debug\net8.0\ref\CareOnSpot.dll
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\bin\Debug\net8.0\appsettings.Development.json
-D:\pre-defense\Tactsoft\homepage\CareOnSpot\bin\Debug\net8.0\libman.json
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\bin\Debug\net8.0\appsettings.json
+D:\pre-defense\Tactsoft\homepage\CareOnSpot\bin\Debug\net8.0\libman.json
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\bin\Debug\net8.0\CareOnSpot.staticwebassets.runtime.json
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\bin\Debug\net8.0\CareOnSpot.exe
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\bin\Debug\net8.0\CareOnSpot.deps.json
@@ -1844,6 +1844,7 @@ D:\pre-defense\Tactsoft\homepage\CareOnSpot\obj\Debug\net8.0\CareOnSpot.csproj.C
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\obj\Debug\net8.0\CareOnSpot.MvcApplicationPartsAssemblyInfo.cache
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\obj\Debug\net8.0\CareOnSpot.RazorAssemblyInfo.cache
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\obj\Debug\net8.0\CareOnSpot.RazorAssemblyInfo.cs
+D:\pre-defense\Tactsoft\homepage\CareOnSpot\obj\Debug\net8.0\CareOnSpot.sourcelink.json
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\obj\Debug\net8.0\staticwebassets.build.json
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\obj\Debug\net8.0\staticwebassets.development.json
 D:\pre-defense\Tactsoft\homepage\CareOnSpot\obj\Debug\net8.0\staticwebassets\msbuild.CareOnSpot.Microsoft.AspNetCore.StaticWebAssets.props

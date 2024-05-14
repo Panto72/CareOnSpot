@@ -7,6 +7,6 @@ namespace CareOnSpot.Services
     public interface IDoctorService : IBaseService<Doctor>
     {
         IEnumerable<SelectListItem> Dropdown();
-        IEnumerable<SelectListItem> Dropdown(int id);
+        IEnumerable<SelectListItem> Dropdown(int? selected);
     }
 }

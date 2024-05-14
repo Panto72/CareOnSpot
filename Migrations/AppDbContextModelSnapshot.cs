@@ -245,6 +245,80 @@ namespace CareOnSpot.Migrations
                     b.ToTable("DoctorAppointment");
                 });
 
+            modelBuilder.Entity("CareOnSpot.Models.EmergencyHelp", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Age")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("AmbulanceId")
+                        .HasColumnType("int");
+
+                    b.Property<double?>("Amount")
+                        .HasColumnType("float");
+
+                    b.Property<string>("ConfirmStatus")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTimeOffset>("CreatedDate")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("Gender")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("HospitalId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MobileNumber")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("PaitentName")
+                        .IsRequired()
+                        .HasMaxLength(85)
+                        .HasColumnType("nvarchar(85)");
+
+                    b.Property<string>("PickUpSopt")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<int?>("UpdateBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("datetimeoffset");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AmbulanceId");
+
+                    b.HasIndex("HospitalId");
+
+                    b.HasIndex("LocationId");
+
+                    b.ToTable("EmergencyHelps");
+                });
+
             modelBuilder.Entity("CareOnSpot.Models.Hospital", b =>
                 {
                     b.Property<int>("Id")
@@ -291,6 +365,35 @@ namespace CareOnSpot.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Hospitals");
+                });
+
+            modelBuilder.Entity("CareOnSpot.Models.Location", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTimeOffset>("CreatedDate")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("LocationName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int?>("UpdateBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTimeOffset?>("UpdateDate")
+                        .HasColumnType("datetimeoffset");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Location");
                 });
 
             modelBuilder.Entity("CareOnSpot.Models.MedicalShop", b =>
@@ -413,7 +516,7 @@ namespace CareOnSpot.Migrations
                         {
                             Id = 1,
                             CreatedBy = 1,
-                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 13, 13, 6, 55, 711, DateTimeKind.Unspecified).AddTicks(3091), new TimeSpan(0, 6, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 14, 16, 3, 52, 191, DateTimeKind.Unspecified).AddTicks(9299), new TimeSpan(0, 6, 0, 0, 0)),
                             Description = "Consult dermatologists for skin, hair, and nail conditions.",
                             Title = "Dermatology"
                         },
@@ -421,7 +524,7 @@ namespace CareOnSpot.Migrations
                         {
                             Id = 2,
                             CreatedBy = 1,
-                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 13, 13, 6, 55, 711, DateTimeKind.Unspecified).AddTicks(3136), new TimeSpan(0, 6, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 14, 16, 3, 52, 191, DateTimeKind.Unspecified).AddTicks(9349), new TimeSpan(0, 6, 0, 0, 0)),
                             Description = "Consult dermatologists for skin, hair, and nail conditions.",
                             Title = "Ophthalmology"
                         },
@@ -429,7 +532,7 @@ namespace CareOnSpot.Migrations
                         {
                             Id = 3,
                             CreatedBy = 1,
-                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 13, 13, 6, 55, 711, DateTimeKind.Unspecified).AddTicks(3138), new TimeSpan(0, 6, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 14, 16, 3, 52, 191, DateTimeKind.Unspecified).AddTicks(9352), new TimeSpan(0, 6, 0, 0, 0)),
                             Description = "Consult dermatologists for skin, hair, and nail conditions.",
                             Title = "Pediatrics"
                         },
@@ -437,7 +540,7 @@ namespace CareOnSpot.Migrations
                         {
                             Id = 4,
                             CreatedBy = 1,
-                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 13, 13, 6, 55, 711, DateTimeKind.Unspecified).AddTicks(3141), new TimeSpan(0, 6, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 14, 16, 3, 52, 191, DateTimeKind.Unspecified).AddTicks(9354), new TimeSpan(0, 6, 0, 0, 0)),
                             Description = "Consult dermatologists for skin, hair, and nail conditions.",
                             Title = "Cardiology"
                         },
@@ -445,7 +548,7 @@ namespace CareOnSpot.Migrations
                         {
                             Id = 5,
                             CreatedBy = 1,
-                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 13, 13, 6, 55, 711, DateTimeKind.Unspecified).AddTicks(3143), new TimeSpan(0, 6, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 14, 16, 3, 52, 191, DateTimeKind.Unspecified).AddTicks(9356), new TimeSpan(0, 6, 0, 0, 0)),
                             Description = "Consult dermatologists for skin, hair, and nail conditions.",
                             Title = "Psychiatry"
                         },
@@ -453,7 +556,7 @@ namespace CareOnSpot.Migrations
                         {
                             Id = 6,
                             CreatedBy = 1,
-                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 13, 13, 6, 55, 711, DateTimeKind.Unspecified).AddTicks(3146), new TimeSpan(0, 6, 0, 0, 0)),
+                            CreatedDate = new DateTimeOffset(new DateTime(2024, 5, 14, 16, 3, 52, 191, DateTimeKind.Unspecified).AddTicks(9358), new TimeSpan(0, 6, 0, 0, 0)),
                             Description = "Consult dermatologists for skin, hair, and nail conditions.",
                             Title = "Orthopedics"
                         });
@@ -558,6 +661,32 @@ namespace CareOnSpot.Migrations
                     b.Navigation("Specialitie");
                 });
 
+            modelBuilder.Entity("CareOnSpot.Models.EmergencyHelp", b =>
+                {
+                    b.HasOne("CareOnSpot.Models.Ambulance", "Ambulance")
+                        .WithMany("EmergencyHelps")
+                        .HasForeignKey("AmbulanceId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("CareOnSpot.Models.Hospital", "Hospital")
+                        .WithMany("EmergencyHelps")
+                        .HasForeignKey("HospitalId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("CareOnSpot.Models.Location", "Location")
+                        .WithMany("EmergencyHelp")
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Ambulance");
+
+                    b.Navigation("Hospital");
+
+                    b.Navigation("Location");
+                });
+
             modelBuilder.Entity("CareOnSpot.Models.MedicalTest", b =>
                 {
                     b.HasOne("CareOnSpot.Models.Hospital", "Hospital")
@@ -567,6 +696,11 @@ namespace CareOnSpot.Migrations
                         .IsRequired();
 
                     b.Navigation("Hospital");
+                });
+
+            modelBuilder.Entity("CareOnSpot.Models.Ambulance", b =>
+                {
+                    b.Navigation("EmergencyHelps");
                 });
 
             modelBuilder.Entity("CareOnSpot.Models.BloodType", b =>
@@ -585,7 +719,14 @@ namespace CareOnSpot.Migrations
 
                     b.Navigation("Doctors");
 
+                    b.Navigation("EmergencyHelps");
+
                     b.Navigation("MedicalTests");
+                });
+
+            modelBuilder.Entity("CareOnSpot.Models.Location", b =>
+                {
+                    b.Navigation("EmergencyHelp");
                 });
 
             modelBuilder.Entity("CareOnSpot.Models.Specialitie", b =>

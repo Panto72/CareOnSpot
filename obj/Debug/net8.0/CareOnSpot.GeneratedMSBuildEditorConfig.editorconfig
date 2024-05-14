@@ -138,6 +138,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/EmergencyHelp/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1lcmdlbmN5SGVscFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/EmergencyHelp/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1lcmdlbmN5SGVscFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/EmergencyHelp/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1lcmdlbmN5SGVscFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/EmergencyHelp/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1lcmdlbmN5SGVscFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/EmergencyHelp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1lcmdlbmN5SGVscFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -164,6 +184,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/Hospital/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9zcGl0YWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/Location/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/Location/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/Location/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/Location/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/Location/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/MedicalShop/Create.cshtml]
@@ -238,12 +278,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxDcmVhdGVBcG9pbm1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/UserDashboard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxJbmRleC5jc2h0bWw=
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/UserDashboard/GetAllSpecialitie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxHZXRBbGxTcGVjaWFsaXRpZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/UserDashboard/OnlineConsultation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxPbmxpbmVDb25zdWx0YXRpb24uY3NodG1s
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/UserDashboard/GetDoctors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxHZXREb2N0b3JzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/UserDashboard/GetDoctorsBySpecialitie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxHZXREb2N0b3JzQnlTcGVjaWFsaXRpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/UserDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckRhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/pre-defense/Tactsoft/homepage/CareOnSpot/Views/User/Index.cshtml]

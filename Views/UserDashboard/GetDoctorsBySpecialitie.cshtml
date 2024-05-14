@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CareOnSpot.Models.Doctor>
+
+@{
+    ViewData["Title"] = "GetDoctorsBySpecialitie";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+@if (Model.Any())
+{
+    <main class="container py-5">
+        <div class="row row-cols-6 row-cols-md-2 g-4 ">
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow">
+
+                        <div class="card-body">
+                            <div class="text-section">
+                                <h5 class="card-title fw-bold">@item.Name</h5>
+                                <p class="card-text">@item.Designation <br>@item.Specialitie.Title</p>
+                            </div>
+                            <div class="cta-section">
+                                <div>@item.VisitFee</div>
+                                <a asp-action="CreateApoinment" asp-controller="UserDashboard" asp-route-id="@item.Id" class="btn btn-light">Appoinment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </main>
+}
+else
+{
+    <h1>No data found</h1>
+}
+

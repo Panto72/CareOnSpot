@@ -12,22 +12,22 @@ namespace CareOnSpot.Services
         {           
         }
 
+        public IEnumerable<SelectListItem> Dropdown(int? selected = 0)
+        {
+            return GetAll().Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Id.ToString(),
+                Selected = x.Id == selected,
+            });
+        }
+
         public IEnumerable<SelectListItem> Dropdown()
         {
             return GetAll().Select(x => new SelectListItem
             {
                 Text = x.Name,
                 Value = x.Id.ToString(),
-            });
-        }
-
-        public IEnumerable<SelectListItem> Dropdown(int id)
-        {
-            return GetAll(x=>x.Id==id).Select(x => new SelectListItem
-            {
-                Text = x.Name,
-                Value = x.Id.ToString(),
-                Selected = true,
             });
         }
     }
